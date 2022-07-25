@@ -17,7 +17,7 @@
     <header class="container">
         <!-- navbar -->
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-light mb-5">
+            <nav class="navbar fixed-top navbar-expand-lg bg-light mb-5">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo.png" alt="">
@@ -33,13 +33,13 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shoes</a>
+                                <a class="nav-link" href="#shoes">Shoes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Backpack</a>
+                                <a class="nav-link" href="#bag">Backpack</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Subscribtion</a>
+                                <a class="nav-link" href="#sub">Subscribtion</a>
                             </li>
                         </ul>
 
@@ -170,10 +170,11 @@
         </section>
         <div>
             <!-- shoes section start  -->
-            <div class="container mt-5 mb-5">
-                <h1>Shoes</h1>
-            </div>
-            <section class="container mb-5">
+
+            <section class="container mb-5" id="shoes">
+                <div class=" mt-5 mb-5">
+                    <h1>Shoes</h1>
+                </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                         <div class="card border-0 shadow-lg h-100">
@@ -226,11 +227,11 @@
                 </div>
             </section>
             <!-- Backpack  -->
-            <div class="container mt-5 mb-5 d-flex justify-content-between align-items-center">
-                <h1>Backpack</h1>
-                <a class="text-decoration-none text-warning" href="">see all</a>
-            </div>
-            <section class="container mb-5">
+
+            <section class="container mb-5" id="bag">
+                <div class=" mt-5 mb-5">
+                    <h1>Backpack</h1>
+                </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                         <div class="card border-0 shadow-lg h-100">
@@ -279,9 +280,29 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Email section  -->
         </div>
-        
+        <section style="height: 350px;"
+            class="container rounded-3 bg-info d-flex justify-content-center align-items-center mb-5" id="sub">
+            <div>
+                <h2>LES'T STAY IN TOUCH</h2>
+                <p>Get updates on sales specials and more</p>
+
+
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="send your email">
+                </div>
+                <button type="submit" class="btn btn-danger text-black">Send Email</button>
+
+            </div>
+
+        </section>
     </main>
+    <footer class="mt-5 text-center">
+        <p>@Poanda Ecommerce, 2022, All right reserved, Dhaka, Bangladesh </p>
+    </footer>
 </body>
 
 </html>
